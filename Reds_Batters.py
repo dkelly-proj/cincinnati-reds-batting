@@ -60,5 +60,5 @@ fig = px.scatter(df, x = 'hrs_running', y = 'hits_running', size = 'ba', animati
 
 fig.update_layout(showlegend = False, autosize=False,width=1000,height=750)
 
-plotly.offline.plot(fig, "Reds_Batters_2019.html")
+plotly.io.write_html(fig, file = "Reds_Batters_2019.html", auto_open = True)
 
