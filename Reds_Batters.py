@@ -52,7 +52,7 @@ df['Team'] = ['Reds' for item in df['Player']]
 df = df.fillna(0)
 
 fig = px.scatter(df, x = 'hrs_running', y = 'hits_running', size = 'ba', animation_frame = 'Game',
-                 range_x = [-5, 60], range_y = [-10, 175], template = 'simple_white', size_max = 100, hover_name = 'Player',
+                 range_x = [-5, 60], range_y = [-10, 175], template = 'simple_white', size_max = 35, hover_name = 'Player',
                  labels = {'hrs_running': 'Home Runs', 'at_bats_running': 'At-Bats',
                            'ba': 'Batting Average', 'Game': 'Date', 'hits_running': 'Hits'},
                  title = 'Cincinnati Reds Batting Stats by Player in 2019', color = 'Team',
